@@ -129,7 +129,9 @@ def product(product_id):
         {"id": 5, "name": "Product 5", "description": "Description of Product 5", "price": 99.99},
         {"id": 6, "name": "Product 6", "description": "Description of Product 6", "price": 99.99},
         {"id": 7, "name": "Product 7", "description": "Description of Product 7", "price": 99.99},
-        {"id": 8, "name": "Product 8", "description": "Description of Product 8", "price": 99.99},
+        {"id": 9, "name": "Product 9", "description": "Description of Product 8", "price": 99.99},
+        {"id": 10, "name": "Product 10", "description": "Description of Product 8", "price": 99.99},
+        {"id": 11, "name": "Product 11", "description": "Description of Product 8", "price": 99.99},
         # Add more products here
     ]
 
@@ -145,7 +147,7 @@ def product_details(product_id):
         'id': product_id,
         'name': f'Product {product_id}',
         'description': f'Description of Product {product_id}',
-        'price': 99.99  # Example price (replace with actual price fetched from the database)
+        'price': 99.99
     }
     # Render the product details page and pass the product details to the template
     return render_template('product_details.html', product=product)
@@ -155,6 +157,12 @@ def product_details(product_id):
 def best_products():
     # Logic to display best products page
     return render_template('best_products.html')
+
+
+@app.route('/products')
+def products():
+    # Logic to display  products page
+    return render_template('products.html')
 
 
 @app.route('/send_message', methods=['POST'])

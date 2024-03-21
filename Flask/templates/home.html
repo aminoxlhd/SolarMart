@@ -44,6 +44,16 @@
         .navbar-custom .navbar-nav .nav-link {
             color: #ffffff;
         }
+
+        @keyframes logoAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .logo-animation {
+            animation: logoAnimation 2s infinite;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +95,120 @@
     <div class="container mt-5">
         <h2 class="text-center mb-4">Featured Products</h2>
         <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/1.jpeg" class="card-img-top product-img" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Description of Product 1</p>
+                        <p class="card-text">$99.99</p>
+                        <a href="{{ url_for('product', product_id=1) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/2.jpeg" class="card-img-top product-img" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Description of Product 2</p>
+                        <p class="card-text">$79.99</p>
+                        <a href="{{ url_for('product', product_id=2) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/3.jpeg" class="card-img-top product-img" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Description of Product 3</p>
+                        <p class="card-text">$149.99</p>
+                        <a href="{{ url_for('product', product_id=3) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more products here -->
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/12.jpeg" class="card-img-top product-img" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 4</h5>
+                        <p class="card-text">Description of Product 4</p>
+                        <p class="card-text">$129.99</p>
+                        <a href="{{ url_for('product', product_id=4) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/5.jpeg" class="card-img-top product-img" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 5</h5>
+                        <p class="card-text">Description of Product 5</p>
+                        <p class="card-text">$199.99</p>
+                        <a href="{{ url_for('product', product_id=5) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/6.jpeg" class="card-img-top product-img" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 6</h5>
+                        <p class="card-text">Description of Product 6</p>
+                        <p class="card-text">$89.99</p>
+                        <a href="{{ url_for('product', product_id=6) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/10.jpeg" class="card-img-top product-img" alt="Product 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 7</h5>
+                        <p class="card-text">Description of Product 7</p>
+                        <p class="card-text">$89.99</p>
+                        <a href="{{ url_for('product', product_id=7) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/11.jpeg" class="card-img-top product-img" alt="Product 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 7</h5>
+                        <p class="card-text">Description of Product 9</p>
+                        <p class="card-text">$89.99</p>
+                        <a href="{{ url_for('product', product_id=9) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+                        <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="static/images/SolarMart/8.jpeg" class="card-img-top product-img" alt="Product 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 8</h5>
+                        <p class="card-text">Description of Product 8</p>
+                        <p class="card-text">$89.99</p>
+                        <a href="{{ url_for('product', product_id=8) }}" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Add more products as needed -->
+        </div>
+    </div>
             <!-- Product cards -->
             <!-- Add your product cards here -->
         </div>

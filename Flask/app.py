@@ -159,6 +159,12 @@ def best_products():
     return render_template('best_products.html')
 
 
+@app.route('/account')
+def account():
+    # Logic to display best products page
+    return render_template('account.html')
+
+
 @app.route('/products')
 def products():
     # Logic to display  products page

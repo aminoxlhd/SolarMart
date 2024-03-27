@@ -1,3 +1,4 @@
+from datetime import datetime
 from flask import Flask, render_template, redirect, url_for, request, session
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -75,15 +76,14 @@ def logout():
     return redirect(url_for('home'))
 
 # Route for adding product to cart
-@app.route('/add_to_cart/<int:product_id>')
-def add_to_cart(product_id):
-    if 'user_id' in session:
-        cart_item = Cart(user_id=session['user_id'], product_id=product_id)
-        db.session.add(cart_item)
-        db.session.commit()
-        return redirect(url_for('view_cart'))
+@app.route('/add_to_cart', methods=['GET', 'POST'])
+def add_to_cart():
+    if request.method == 'POST':
+        # Logic to add the product to the cart
+        return 'Product added to cart successfully'  # You can customize this message
     else:
-        return redirect(url_for('login'))
+        # Handle GET request (optional)
+        return 'GET request received for adding to cart'
 
 # Route for viewing cart
 @app.route('/view_cart')
@@ -142,33 +142,55 @@ def product(product_id):
 
 @app.route('/product/<int:product_id>')
 def product_details(product_id):
+    image_paths = {
+        1: 'static/images/SolarMart/1.jpeg',
+        2: 'static/images/SolarMart/2.jpeg',
+        # Add more product IDs and corresponding image paths as needed
+        }
+
+        # Fetch the details of the selected product from the mapping
+    product_image_path = image_paths.get(product_id)
+    if not product_image_path:
+        abort(404)
+
+    return render_template('product_details.html', product_id=product_id, product_image_path=product_image_path)
+#@app.route('/product/<int:product_id>')
+#def product_details(product_id):
     # Fetch the details of the selected product from the database
-    product = {
-        'id': product_id,
-        'name': f'Product {product_id}',
-        'description': f'Description of Product {product_id}',
-        'price': 99.99
-    }
+   # product = {
+   #     'id': product_id,
+   #     'name': f'Product {product_id}',
+   #     'description': f'Description of Product {product_id}',
+    #    'price': 99.99
+   # }
     # Render the product details page and pass the product details to the template
-    return render_template('product_details.html', product=product)
+    #return render_template('product_details.html', product=product)
 
 
-@app.route('/best_products')
-def best_products():
-    # Logic to display best products page
-    return render_template('best_products.html')
+@app.route('/submit_message', methods=['POST'])
+def submit_message():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
 
+        # Process the message (e.g., send email, save to database, etc.)
 
-@app.route('/account')
-def account():
-    # Logic to display best products page
-    return render_template('account.html')
+        return 'Your message has been submitted successfully!'
+    else:
+        return 'Method not allowed'
 
 
 @app.route('/products')
 def products():
     # Logic to display  products page
     return render_template('products.html')
+
+@app.route('/contact')
+def contact():
+    # Logic to display  products page
+    return render_template('contact.html')
+
 
 
 @app.route('/send_message', methods=['POST'])
@@ -180,6 +202,10 @@ def send_message():
         message = request.form.get('message')
         # Redirect the user to another page or render a template
         return render_template('message_sent.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html', current_year=datetime.now().year)
 
 
 if __name__ == '__main__':

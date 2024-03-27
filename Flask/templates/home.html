@@ -10,10 +10,14 @@
         .jumbotron {
             background-image: url('static/images/SolarMart/Home.jpeg');
             background-size: cover;
-            color: #fff;
-            text-shadow: 2px 2px 4px #000000;
+            color: #000000; /* Change text color to black */
             padding-top: 100px;
             padding-bottom: 100px;
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for better readability */
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem; /* Increase font size for the header */
         }
 
         .product-img {
@@ -32,27 +36,16 @@
             text-align: center;
         }
 
-         /* Custom styles for navigation bar */
+        /* Custom styles for navigation bar */
         .navbar-custom {
             background-color: #333;
         }
 
-        .navbar-custom .navbar-brand, .navbar-custom .navbar-text {
-            color: #ffffff;
-        }
-
-        .navbar-custom .navbar-nav .nav-link {
-            color: #ffffff;
-        }
-
-        @keyframes logoAnimation {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-
-        .logo-animation {
-            animation: logoAnimation 2s infinite;
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text,
+        .navbar-custom .nav-link {
+            color: #ffffff; /* Change text color to white */
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for better readability */
         }
     </style>
 </head>
@@ -70,11 +63,6 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/products">Products <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/account">Account</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/best_products">Best Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>

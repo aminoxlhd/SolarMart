@@ -10,7 +10,7 @@ handler.post(async (req, res) => {
   await db.connect();
   const user = await User.findOne({ email: req.body.email });
   // await db.disconnect();
-  if (use) {
+  if (user) {
     const token = signToken(user);
     res.send({
       token,

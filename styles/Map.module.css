@@ -1,0 +1,77 @@
+.mapContainer {
+    height: 85vh;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leafletContainer {
+    height: 100%;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.leafletControl {
+    z-index: 0 !important
+}
+
+.leafletPane {
+    z-index: 0 !important
+}
+
+.leafletTop,
+.leafletBottom {
+    z-index: 0 !important
+}
+
+.mapContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-wrap: nowrap;
+}
+
+@media (max-width:680px) {
+    .mapContainer {
+        height: 70vh;
+    }
+
+    .mapContainer h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:355px) {
+    .mapContainer h2 {
+        font-size: 1.2rem;
+    }
+
+    .mapContainer {
+        height: 50vh;
+    }
+}
+
+.resetButton {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    z-index: 0 !important;
+    background-color: white;
+    padding: 8px 9px;
+    line-height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resetIcon{
+    color: #00353F;
+}

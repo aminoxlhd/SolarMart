@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  overflow-x:hidden ;
+}
+
+
+
+.MuiTypography-root{
+  text-decoration: none;
+
+}
+.MuiPaper-root{
+  margin: 0;
+}
+p{
+  font-weight: 200 !important;
+  font-size: 1.2em;
+  
+}
+a {
+  
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none; 
+}
+* {
+  box-sizing: border-box;
+  
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 35px !important;
+  color: #a9a9a9 !important;
+  
+}
+.slick-dots {
+  position: relative !important;
+}
+
+.slick-dots li{
+  width: 50px !important;
+  height: 50px !important;
+}
+.MuiCardMedia-media {
+  width: 100% !important;
+  margin: auto !important;
+ 
+}
+
+
+.newsletter-container{
+  margin-top: 40px;
+}
+
+.map-container {
+  height: 100vh;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.leaflet-container {
+  height: 100%;
+  width: 80%;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.leaflet-control {
+  z-index: 0 !important
+}
+
+.leaflet-pane {
+  z-index: 0 !important
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 0 !important
+}
+
+
+.map-container h2 ,.categories-section h2,.newsletter-container h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-wrap: nowrap;
+}
+.map-container h2 ,.categories-section h2,.newsletter-container h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-wrap: nowrap;
+}
+#aboutUsText{
+  text-align: center !important;
+}
+
+
+
+
+

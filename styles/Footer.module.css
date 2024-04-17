@@ -1,0 +1,127 @@
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footerContact,
+.footerLinks,
+.footerBusinessHours {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.footer h3 {
+    color: #F6F6F6;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.footerBusinessHours .li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footerBusinessHours span {
+    display: flex;
+    align-items: center;
+}
+
+.footerBusinessHours span svg,
+.footerBusinessHours a svg {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #00A0BC;
+    font-size: 1.3rem;
+}
+
+#leftMargin {
+    margin: 0 0 0 30px;
+}
+
+.footerBusinessHours span,
+.footerBusinessHours a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footerContact input,
+.footerContact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.footerLinks ul,
+.footerBusinessHours ul {
+    margin-top: 20px;
+}
+
+.footerLinks a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footerLinks a:hover,
+.footerBusinessHours a:hover {
+    color: #00A0BC;
+    text-decoration: none;
+}
+
+.footerLinks ul .li {
+    margin-bottom: 8px;
+}
+
+.footerBusinessHours span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footerCopyright {
+    align-self: flex-end;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footerCopyright p {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 944px) {
+    .li {
+        font-size: 0.8rem;
+    }
+
+    .footerContact label {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .footer {
+        height: auto;
+        padding: 10px 10px 0;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerContact,
+    .footerLinks,
+    .footerBusinessHours {
+        flex: 1 0 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        border-bottom: 0.1rem solid #F6F6F6;
+    }
+}

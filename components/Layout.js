@@ -342,7 +342,7 @@ export default function Layout({ metaImage, title, description, children }) {
                   <ListItemText
                    primary={
                     <Typography variant="a" className={classes.sideBarText}>
-                      Produits
+                      Product
                     </Typography>
                   }></ListItemText>
                   {open ? <ExpandLess variant="a" className={classes.expandIcon} /> : <ExpandMore variant="a" className={classes.expandIcon} />}

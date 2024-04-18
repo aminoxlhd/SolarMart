@@ -29,7 +29,7 @@ export default function BrowseCategories() {
         <>
             {categories.length > 0 && (
                 <div className='categories-section'>
-                    <Typography component="h2" variant="h2" >Explorez nos catégories</Typography>
+                    <Typography component="h2" variant="h2" >Explore our categories</Typography>
                     <div className={classes.browseCategories}>
                         {categories.map((category, index) => (
                             <CategoriesAnimation category={category} key={category.id} index={index} />

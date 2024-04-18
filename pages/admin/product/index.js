@@ -284,16 +284,7 @@ function ProductCreate() {
                                             <ListItemText primary="Catégories"></ListItemText>
                                         </ListItem>
                                     </NextLink>
-                                    <NextLink href="/admin/banner" passHref>
-                                        <ListItem button component="a">
-                                            <ListItemText primary="Bannière"></ListItemText>
-                                        </ListItem>
-                                    </NextLink>
-                                    <NextLink href="/admin/slider" passHref>
-                                        <ListItem button component="a">
-                                            <ListItemText primary="Carrousel"></ListItemText>
-                                        </ListItem>
-                                    </NextLink>
+
                                 </>
                             )}
                             <NextLink href="/admin/orders" passHref>
@@ -306,25 +297,7 @@ function ProductCreate() {
                                     <ListItemText primary="Messages"></ListItemText>
                                 </ListItem>
                             </NextLink>
-                            <NextLink href="/admin/newsLetters" passHref>
-                                <ListItem button component="a">
-                                    <ListItemText primary="Newsletters"></ListItemText>
-                                </ListItem>
-                            </NextLink>
-                            {userInfo && userInfo.isAdmin && (
-                                <>
-                                    <NextLink href="/admin/users" passHref>
-                                        <ListItem button component="a">
-                                            <ListItemText primary="Utilisateurs"></ListItemText>
-                                        </ListItem>
-                                    </NextLink>
-                                    <NextLink href="/admin/register" passHref>
-                                        <ListItem button component="a">
-                                            <ListItemText primary="Nouvel utilisateur"></ListItemText>
-                                        </ListItem>
-                                    </NextLink>
-                                </>
-                            )}
+
                         </List>
                     </Card>
                 </Grid>

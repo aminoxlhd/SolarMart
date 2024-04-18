@@ -49,7 +49,7 @@ export default function ContactUs() {
                         variant="outlined"
                         fullWidth
                         id="fullName"
-                        label="Nom et prénom"
+                        label="First and last name"
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                         margin="normal"
@@ -68,7 +68,7 @@ export default function ContactUs() {
                         variant="outlined"
                         fullWidth
                         id="phoneNumber"
-                        label="Numéro de téléphone"
+                        label="Phone number"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         margin="normal"
@@ -77,7 +77,7 @@ export default function ContactUs() {
                         variant="outlined"
                         fullWidth
                         id="subject"
-                        label="Sujet"
+                        label="Subject"
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                         margin="normal"

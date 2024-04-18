@@ -561,7 +561,7 @@ export default function Layout({ metaImage, title, description, children }) {
                       button
                       component="a"
                     >
-                      <ListItemText primary='Tout les produits'></ListItemText>
+                      <ListItemText primary='All products'></ListItemText>
                     </ListItem>
                   </NextLink>
                   {categories && categories.map((category) => (

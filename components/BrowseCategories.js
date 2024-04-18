@@ -85,7 +85,7 @@ function CategoriesAnimation({ category, index }) {
                         size="small"
                         color="primary"
                     >
-                        Explorer 
+                        Explore
                     </Button>
                 </CardActions>
             </Card>

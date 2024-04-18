@@ -858,7 +858,7 @@ export default function Layout({ metaImage, title, description, children }) {
                       }
                       secondary={
                         <Typography className={classes.secondaryText}>
-                          Monday - Sunday de 9h à 17h
+                          Monday - Sunday from 9 a.m. to 5 p.m.
                         </Typography>
                       }
                     />

@@ -48,7 +48,7 @@ function Map() {
           })
         } position={[49.35455436791739, 4.070174271164345]}>
           <Popup>
-            Visitez-nous ici.
+            Visit Us.
           </Popup>
         </Marker>
         <ResetControl />

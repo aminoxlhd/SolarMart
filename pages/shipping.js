@@ -75,7 +75,7 @@ export default function Shipping() {
                   variant="outlined"
                   fullWidth
                   id="fullName"
-                  label="Nom Complet"
+                  label="Full Name"
                   error={Boolean(errors.fullName)}
                   helperText={
                     errors.fullName
@@ -128,7 +128,7 @@ export default function Shipping() {
                   variant="outlined"
                   fullWidth
                   id="phoneNumber"
-                  label="Numéro de téléphone"
+                  label="Phone number"
                   inputProps={{ type: 'number' }}
                   error={Boolean(errors.phoneNumber)}
                   helperText={
@@ -183,7 +183,7 @@ export default function Shipping() {
                   variant="outlined"
                   fullWidth
                   id="city"
-                  label="Ville"
+                  label="City"
                   error={Boolean(errors.city)}
                   helperText={
                     errors.city
@@ -239,7 +239,7 @@ export default function Shipping() {
                   variant="outlined"
                   fullWidth
                   id="country"
-                  label="Pays"
+                  label="country"
                   error={Boolean(errors.country)}
                   helperText={
                     errors.country

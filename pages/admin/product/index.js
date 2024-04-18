@@ -468,18 +468,6 @@ function ProductCreate() {
                                             />
                                         </ListItem>
 
-                                        <ListItem >
-                                            <FormControlLabel
-                                                control={
-                                                    <Checkbox
-                                                        color="primary"
-                                                        checked={isOffer}
-                                                        onChange={(e) => setIsOffer(e.target.checked)}
-                                                    />
-                                                }
-                                                label="bonnes affaires"
-                                            />
-                                        </ListItem>
 
                                         <Divider />
 

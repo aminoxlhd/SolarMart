@@ -364,7 +364,7 @@ export default function Layout({ metaImage, title, description, children }) {
                         onClick={sidebarCloseHandler}
                         primary={
                           <Typography variant="a" className={classes.sideBarText}>
-                            Tout les produits
+                            All products
                           </Typography>
                         }></ListItemText>
                       </ListItem>

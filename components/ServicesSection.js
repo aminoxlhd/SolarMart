@@ -28,11 +28,6 @@ export default function ServicesSection() {
             <div className={Styles.servicesTitle}>
                 <h2>A Comprehensive Service</h2>
             </div>
-            <div className={Styles.services}>
-                {services.map((service, index) => (
-                    <ServiceSection key={index} service={service} index={index} />
-                ))}
-            </div>
         </div>
     );
 }

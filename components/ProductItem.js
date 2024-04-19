@@ -17,7 +17,7 @@ export default function ProductItem({ product, addToCartHandler }) {
         <CardActionArea>
           <CardMedia
             component="img"
-            image={product.images[0]?.image || '/images/image_placeholder.png'} 
+            image={product.images[0]?.image}
             title={product.name}
           />
           <CardContent>

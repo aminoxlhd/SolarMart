@@ -32,7 +32,6 @@ export default function Home(props) {
 
       <BrowseCategories />
 
-      <ServicesSection />
       <Map />
 
     </Layout>
